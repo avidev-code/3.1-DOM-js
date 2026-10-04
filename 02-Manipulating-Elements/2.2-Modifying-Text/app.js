@@ -1,7 +1,8 @@
-const input = document.querySelector("input"); // selects the first <input> element in the document.
+const title = document.querySelector("#app-title");
+console.dir(title); // returns the element with the specified ID, we can save this value in a variable to do something later.
 
-console.dir(input); // shows all the properties of the input element, including the value property.
+title.textContent = "Hello World!"; // modifies the text content of the element with the specified ID.
 
-//Changing the property of an element:
-input.value = 'Apellido'; // changes the value of the input element to "Apellido"
-console.log(input.value); // Apellido.
+title.innerHTML = "<span>Hello World!</span>"; // modifies the HTML content of the element with the specified ID.
+
+// The difference between textContent and innerHTML is that textContent sets or returns the text content of the specified node, while innerHTML sets or returns the HTML content of the specified node. If you want to modify the text content of an element, use textContent. If you want to modify the HTML content of an element, use innerHTML.
