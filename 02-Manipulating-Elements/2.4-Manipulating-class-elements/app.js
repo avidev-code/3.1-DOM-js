@@ -28,3 +28,8 @@ menu.classList.add('main-menu'); // This will add the new class to the element w
 
 // Using classList - Manipulating element Classes in javascript (Class 9 of the Platzi course)
 
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+  // Toggle the 'invisible' class on the button element
+  menu.classList.toggle("invisible");
+});
